@@ -82,3 +82,22 @@ function createBox(item) {
 
   main.appendChild(box);
 }
+
+// Init speech synth
+const message = new SpeechSynthesisUtterance();
+
+// Store voices
+let voices = [];
+
+function getVoices() {
+  voices = speechSynthesis.getVoices();
+
+  voices.forEach(voice => {
+    const option = document.createElement('option');
+
+    option.value = voice.name;
+    option.innerText = `${voice.name} ${voice.lang}`;
+
+    voicesSelect.appendChild(option);
+  });
+}
