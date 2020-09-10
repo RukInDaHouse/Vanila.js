@@ -1,4 +1,4 @@
-var ss = 1000; //svg size
+var ss = 465; //svg size
 var p = document.getElementById('p'),
     poly, $;
 
