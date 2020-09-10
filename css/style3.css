@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+html, body {
+  height:100%;
+  font: bold .9rem 'Josefin Sans', sans-serif;
+}
+body {
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-pack:center;
+            justify-content:center;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+            flex-direction:column;
+    padding: 0;
+    margin: 0;
+    overflow:hidden;
+    background: #A2A1D0;
+    cursor: move;
+    -webkit-user-select:none;
+       -moz-user-select:none;
+        -ms-user-select:none;
+            user-select:none;
+}
+body .input{
+      align-self:center;
+      padding-top:0.25rem; 
+   }
+body .input label, body .input output{
+         vertical-align:top;
+         padding-right:1rem;
+      }
+body .input input[type="range"] {
+        -webkit-appearance: none;
+        width: 10rem;
+        padding: 2px 0;
+        background: transparent;
+        outline: none;
+      }
+body .input input[type="range"]::-webkit-slider-runnable-track {
+        position: relative;
+        height: 6px;
+        border-radius: 5px;
+        background: #3B3740;
+      }
+body .input input[type="range"]::-moz-range-track {
+        position: relative;
+        height: 6px;
+        border-radius: 5px;
+        background: #3B3740;
+      }
+body .input input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 16px;
+        width: 16px;
+        margin-top: calc(-16px / 2 + 6px / 2);
+        background: #F9F2E7;
+        color: red;
+        border: none;
+        border-radius: 50%;
+      }
+body .input input[type="range"]::-moz-range-thumb {
+        -webkit-appearance: none;
+        height: 16px;
+        width: 16px;
+        margin-top: calc(-16px / 2 + 6px / 2);
+        background: #F9F2E7;
+        color: red;
+        border: none;
+        border-radius: 50%;
+      }
+body #note{
+        align-self:center;
+        margin-top:.2rem;
+        font-size:.7rem;
+   }
+.svg{
+  text-align:center;
+}
+.svg svg{
+    background: #3B3740;
+    box-shadow:inset 4px 4px 16px 12px hsla(0,0%,05%,.15);
+    border-radius:5px;
+    width: 1000px;
+    height: 500px;
+  }
+
+/*** 
+Kudos: 
+Range Slider design / CSS lifted from @everdimension's Css Box Model Pen: https://codepen.io/everdimension/pen/NrNvGj?editors=0110 
+Thanks! =)
+***/
